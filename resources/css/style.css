@@ -96,6 +96,11 @@ body {
   border: 1px solid var(--hover-color);
 }
 
+.hero__container .search:hover {
+  -webkit-box-shadow: 2px 2px 4px var(--hover-color);
+          box-shadow: 2px 2px 4px var(--hover-color);
+}
+
 .hero__container .search__icon {
   -webkit-transform: translate(-16rem, -1.9rem);
           transform: translate(-16rem, -1.9rem);
@@ -157,6 +162,14 @@ body {
 
 .hero__container .language .language__container .language__item .language__link {
   text-decoration: none;
+  -webkit-transition: -webkit-text-decoration 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: -webkit-text-decoration 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: text-decoration 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: text-decoration 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95), -webkit-text-decoration 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.hero__container .language .language__container .language__item .language__link:hover, .hero__container .language .language__container .language__item .language__link:active {
+  text-decoration: underline;
 }
 
 .footer {
@@ -185,6 +198,14 @@ body {
 .footer .footer__container .footer__item .footer__link {
   color: var(--text-color);
   text-decoration: none;
+  -webkit-transition: -webkit-text-decoration 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: -webkit-text-decoration 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: text-decoration 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: text-decoration 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95), -webkit-text-decoration 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.footer .footer__container .footer__item .footer__link:hover, .footer .footer__container .footer__item .footer__link:active {
+  text-decoration: underline;
 }
 
 .footer .footer__container .footer__item .carbon {
